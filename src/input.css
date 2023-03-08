@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .small_blue_btn {
+        @apply bg-accent text-white font-medium
+                  w-[160px] h-12
+                  border rounded-[10px] border-inherit 
+                  hover:bg-[#7DA2FF]
+                  active:bg-accent active:border-[#3E3E3E];
+      }
+    .small_btn {
+          @apply font-medium 
+                    w-[160px] h-12
+                    border rounded-[10px] border-accent
+                    hover:shadow-[0_0_2px_0] hover:shadow-accent
+                    active:border-[#3E3E3E];
+      }
+    .medium_blue_btn { 
+        @apply bg-accent text-white font-medium leading-[23px]
+                w-[190px] h-[62px]
+                border rounded-[10px] border-inherit 
+                hover:bg-[#7DA2FF]
+                active:bg-accent active:border-[#3E3E3E];
+    }
+    .medium_btn {
+      @apply font-medium 
+                w-[190px] h-[62px] 
+                border rounded-[10px] border-accent
+                hover:shadow-[0_0_2px_0] hover:shadow-accent
+                active:border-[#3E3E3E];
+    }
+    .long_blue_btn {
+      @apply bg-accent text-white font-medium
+                w-[340px] h-12
+                border rounded-[10px] border-inherit 
+                hover:bg-[#7DA2FF]
+                active:bg-accent active:border-[#3E3E3E];
+    }
+    .card {
+      @apply w-[340px] rounded-[40px] bg-[#FAFAFA] 
+               p-[40px_39px_48px_39px]
+               shadow-[0_10px_30px_0] shadow-accent/[0.15] 
+               flex flex-wrap justify-center
+               hover:-translate-y-8 
+               ease-in-out delay-150 duration-300;
+    }
+    .benefits_item {
+        @apply  grid grid-cols-[85px_minmax(235px,_420px)] gap-5
+                
+    }
+}
+
+
+@font-face {
+  font-family: jost;
+  src: url(../font/Jost-VariableFont_wght.ttf);
+}
