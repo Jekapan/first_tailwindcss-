@@ -14,7 +14,7 @@
 
   <body class="text-text-color font-['jost']">
 
-    <div class="max-w-[1440px] mx-auto">
+    <div class="max-w-[1440px] mx-auto overflow-hidden">
       <main class="">
         <!-- ========================================================================
               HEADER
@@ -22,10 +22,10 @@
         <header class="pt-5 max-md:px-[10px] md:pt-10 md:px-right-left md:h-[867px]">
 
           <!-- ____________________TOP NAV_____________________ -->
-          <div class="relative flex flex-row items-center justify-between font-medium h-7 md:h-[74px]">
+          <div class="relative flex flex-row items-center justify-between gap-x-2 font-medium h-7 md:h-[74px]">
             
-            <div class="min-w-max">
-              <img src="img/logo.svg" alt="logo" class="w-full h-full">
+            <div class="h-full">
+              <img src="img/logo.svg" alt="logo" class="h-full">
             </div>
 
            
@@ -35,19 +35,19 @@
             </label>
 
             <nav id="navigation" class="max-md:absolute max-md:right-[-100%] max-md:top-[100%] max-md:z-10 max-md:bg-white max-md:shadow-[0_4px_4px_0] max-md:shadow-[rgb(0_0_0/0.25)]
-                        flex max-md:flex-col justify-between items-center transition-all duration-500">
+                        flex items-center max-md:flex-col md:w-[340px] transition-all duration-500">
 
-              <ul class="max-md:w-[185px] flex max-md:flex-col md:gap-8 justify-between md:mx-[15vw]">
+              <ul class="max-md:w-[185px] flex justify-between w-full max-md:flex-col ">
                 <li><a href="#features" class="block text-center py-5 hover:underline">Features</a></li>
                 <li><a href="#pricing" class="block text-center py-5 hover:underline">Pricing</a></li>
                 <li><a href="#overview" class="block text-center py-5 hover:underline">Overview</a></li>
                 <li><a href="#about" class="block text-center py-5 hover:underline">About</a></li>
               </ul>
 
-              <div class="flex max-md:flex-col-reverse max-md:justify-center justify-between max-md:pt-[33px]
-                          md:w-[240px]">
+              <div class="flex flex-col-reverse justify-center pt-[33px]
+                          md:w-[240px] md:hidden">
               
-                <div class="flex items-center gap-[10px] justify-center cursor-pointer max-md:pt-[35px] max-md:pb-[70px]">
+                <div class="flex items-center gap-[10px] justify-center cursor-pointer pt-[35px] pb-[70px]">
                   <i class="shrink-0"><img src="img/Vector.svg" alt="Vector"></i>
                   <p>English</p>
                 </div>
@@ -59,9 +59,19 @@
               </div>
 
             </nav>
-  
-            
 
+            <div class="flex justify-between w-[240px] max-md:hidden ">
+              
+                <div class="flex items-center gap-[10px] justify-center cursor-pointer ">
+                  <i class="shrink-0"><img src="img/Vector.svg" alt="Vector"></i>
+                  <p>English</p>
+                </div>
+    
+                <button class="h-[47px] w-[125px] border rounded-[10px] self-center
+                               hover:shadow-[0_0_2px_0] hover:shadow-accent active:border-[#3E3E3E]">
+                               Sign Up
+                </button>
+            </div>
             
           </div>
           <!-- ========================================================================
